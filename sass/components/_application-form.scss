@@ -1,0 +1,333 @@
+form[name='application-form'] {
+    padding: 40px;
+}
+
+.application-form__title {
+    // width: 448px;
+    // height: 23px;
+    // font-weight: 700;
+    // font-size: 20px;
+    // line-height: 1.15;
+    // text-align: center;
+    // letter-spacing: 0.03em;
+    // color: $title-text-color;
+
+    // margin-bottom: 12px;
+
+    @media screen and (min-width: 480px) {
+        width: 370px;
+        height: 60px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $title-text-color;
+    
+        margin-bottom: 12px;
+       
+    }
+    
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1200px) {}
+}
+
+/* Form-field */
+.form-field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: #000;
+
+    @media screen and (min-width: 480px) {}
+    
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1200px) {}
+}
+
+.form-field__label {
+    margin-bottom: 4px;
+    color: $primary-text-color;
+
+    @media screen and (min-width: 480px) {}
+    
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1200px) {}
+}
+
+.form-field__icon {
+    position: absolute;
+    
+
+    fill: currentColor;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: $accent-text-color;
+    }
+
+    &:hover + .form-field__input,
+    &:focus + .form-field__input {
+        border-color: $accent-text-color;
+    }
+
+    @media screen and (min-width: 320px) {
+        top: 19px;
+        left: 7px;
+        width: 15px;
+        height: 15px;
+    }
+
+    @media screen and (min-width: 480px) {
+        top: 28px;
+        left: 12px;
+        width: 20px;
+        height: 20px;
+    }
+
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1200px) {}
+}
+
+
+.form-field__input {
+    // width: 448px;
+    // height: 40px;
+    // padding-top: 14px;
+    // padding-bottom: 14px;
+    // padding-left: 40px;
+    // padding-right: 15px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        outline: none;
+        border-color: $accent-text-color;
+        cursor: pointer;
+    }
+
+    &:hover + .form-field__icon,
+    &:focus + .form-field__icon {
+        fill: $accent-text-color;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    @media screen and (min-width: 480px) {
+        width: 370px;
+        height: 40px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 40px;
+        padding-right: 15px;
+    }
+
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1200px) {}
+}
+
+
+.textarea {
+    resize: none;
+
+    @media screen and (min-width: 480px) {}
+    
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1200px) {}
+}
+
+.form-field textarea {
+    height: 120px;
+    /* margin-bottom: 15px; */
+    padding: 12px 16px;
+
+    @media screen and (min-width: 480px) {}
+    
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1200px) {}
+}
+
+.form-field.checkbox {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 480px) {}
+    
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1200px) {}
+}
+
+.checkbox__text a {
+    color: $accent-text-color;
+
+    @media screen and (min-width: 480px) {}
+    
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1200px) {}
+}
+
+.application-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $secondary-text-color;
+    background: $accent-text-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 55px;
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        transform: scale(105%, 105%);
+        cursor: pointer;
+    }
+
+    @media screen and (min-width: 480px) {}
+
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1200px) {}
+}
+
+// .application-button:hover,
+// .application-button:focus {
+//     transform: scale(105%, 105%);
+// }
+
+input[type="checkbox"] {
+    appearance: none;
+
+    @media screen and (min-width: 480px) {}
+    
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1200px) {}
+}
+
+.form-field__icon.agreement {
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    background-color: $accent-text-color;
+    border-radius: 2px;
+    fill: currentColor;
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 480px) {}
+    
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1200px) {}
+}
+
+input[type="checkbox"]:checked + .form-field__icon.agreement {
+    opacity: 1;
+
+    @media screen and (min-width: 480px) {}
+    
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1200px) {}
+}
+
+.form-field__icon.square {
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    fill: #212121;
+    opacity: 1;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 480px) {}
+    
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1200px) {}
+}
+
+input[type="checkbox"]:checked ~ .form-field__icon.square {
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 480px) {}
+    
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1200px) {}
+}
+
+input[type="checkbox"]:hover ~ .form-field__icon.square,
+input[type="checkbox"]:focus ~ .form-field__icon.square {
+    fill: #2196F3;
+
+    @media screen and (min-width: 480px) {}
+    
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1200px) {}
+}
+
+
+.application-button__text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: #FFF;
+
+    @media screen and (min-width: 480px) {}
+    
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1200px) {}
+}
+
+
+.checkbox__text {
+    /* font-family: 'Roboto';
+	font-style: normal; */
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+
+    letter-spacing: 0.03em;
+
+    color: #757575;
+    margin-left: 34px;
+
+    @media screen and (min-width: 480px) {}
+    
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1200px) {}
+
+}
