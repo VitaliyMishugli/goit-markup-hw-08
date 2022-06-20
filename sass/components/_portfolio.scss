@@ -1,14 +1,16 @@
 .portfolio-section {
-    @media screen and (min-width: 320px) {
+    // @media screen and (min-width: 320px) {
         padding-top: 35px;
-    }
+    // }
 
     // @media screen and (min-width: 768px) {
     //     padding-top: 94px;
     // }
 
-    @media screen and (min-width: 1200px) {}
-    padding-top: 94px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+    }
+    
 }
 
 .portfolio {
@@ -26,10 +28,10 @@
     // margin: 0 0 50px 0;
 
     
-    @media screen and (min-width: 320px) {
+    // @media screen and (min-width: 320px) {
         // display: inline-block;
         margin-bottom: 40px;
-    }
+    // }
     
     @media screen and (min-width: 768px) {
         display: flex;
@@ -49,13 +51,15 @@
 }
 
 .projects__item {   
-    @media screen and (min-width: 480px) {
+    // @media screen and (min-width: 480px) {
         display: inline-block;
         margin-right: 8px;
         margin-bottom: 15px;
-    }
+    // }
     
-    @media screen and (min-width: 768px) {}
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
 
     @media screen and (min-width: 1200px) {
         margin-right: 8px;
@@ -64,9 +68,9 @@
 }
 
 .projects__item:not(:last-child){
-    @media screen and (min-width: 320px) {
-        margin-bottom: 5px;
-    }
+    // @media screen and (min-width: 320px) {
+        // margin-bottom: 5px;
+    // }
 }
 
 .projects__item:last-child {
@@ -74,7 +78,9 @@
         margin-right: 0;
     }
     
-    @media screen and (min-width: 768px) {}
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
 
     @media screen and (min-width: 1200px) {
     margin-right: 0;
@@ -108,10 +114,10 @@
 /* Projects-cards */
 .projects-cards {
     // list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-left: -15px;
-    margin-right: -15px;
+    // padding: 0;
+    // margin: 0;
+    // margin-left: -15px;
+    // margin-right: -15px;
 
     @media screen and (min-width: 480px) {
         display: flex;
@@ -131,16 +137,21 @@
     }
 }
 
+.current-card{
+    background-color: $accent-text-color;
+    color: $secondary-text-color;
+}
+
 .projects-cards__item {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    // @media screen and (min-width: 480px) and (max-width: 767px) {
         margin-bottom: 30px;
-    }
+    // }
     
     @media screen and (min-width: 768px) {
         display: flex;
         // flex-direction: column;
         width: calc( (100% - 2 * 30px) / 2 );
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
         &:nth-child(odd) {
             margin-right: 30px;
         }
